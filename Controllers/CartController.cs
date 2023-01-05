@@ -29,9 +29,6 @@ namespace PayGate_integration.Controllers
             _configuration = configuration;
         }
 
-
-        [Route("")]
-        [Route("index")]
         public IActionResult Index()
         {
             return View();
@@ -232,7 +229,7 @@ namespace PayGate_integration.Controllers
                     break;
             }
             TempData["Status"] = status;
-            
+
             return View("Complete");
         }
     }
