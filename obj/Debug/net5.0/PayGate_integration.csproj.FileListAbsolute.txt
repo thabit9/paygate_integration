@@ -156,3 +156,10 @@ E:\Thabis Documents\Projects\NETCore5\paygate_integration\obj\Debug\net5.0\PayGa
 E:\Thabis Documents\Projects\NETCore5\paygate_integration\obj\Debug\net5.0\ref\PayGate_integration.dll
 E:\Thabis Documents\Projects\NETCore5\paygate_integration\obj\Debug\net5.0\PayGate_integration.pdb
 E:\Thabis Documents\Projects\NETCore5\paygate_integration\obj\Debug\net5.0\PayGate_integration.genruntimeconfig.cache
+E:\Thabis Documents\Projects\NETCore5\PayGate_integration\bin\Debug\net5.0\Castle.Core.dll
+E:\Thabis Documents\Projects\NETCore5\PayGate_integration\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+E:\Thabis Documents\Projects\NETCore5\PayGate_integration\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Thabis Documents\Projects\NETCore5\PayGate_integration\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Thabis Documents\Projects\NETCore5\PayGate_integration\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Thabis Documents\Projects\NETCore5\PayGate_integration\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Thabis Documents\Projects\NETCore5\PayGate_integration\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs

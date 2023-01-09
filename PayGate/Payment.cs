@@ -13,10 +13,10 @@ namespace PayGate_integration.PayGate
 {
     public class Payment: IPayment
     { 
-        private ApplicationContext _db;
+        private PayGateContext _db;
         public Payment()
         {
-            _db = new ApplicationContext();
+            _db = new PayGateContext();
         }
 
         #region Utilities

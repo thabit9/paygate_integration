@@ -29,16 +29,18 @@ namespace PayGate_integration.Controllers
             _configuration = configuration;
         }
 
+        [Route("")]
+        [Route("index")]
         public IActionResult Index()
         {
-            return View();
+            return View("Index");
         }
         public async Task<ActionResult<JsonResult>> GetRequest()
         {
             var user = User.FindFirst(ClaimTypes.Name);    
             
-            var PayGateID = _configuration["appSettings:PayGateID"];
-            var PayGateKey  = _configuration["appSettings:PayGateKey"];
+            var PayGateID = _configuration["PayGate:PayGateID"];
+            var PayGateKey  = _configuration["PayGate:PayGateKey"];
 
             HttpClient http = new HttpClient();
             Dictionary<string, string> request = new Dictionary<string, string>();
@@ -116,8 +118,8 @@ namespace PayGate_integration.Controllers
         [HttpPost]
         public async Task<ActionResult> CompletePayment()
         {
-            var PayGateID = _configuration["appSettings:PayGateID"];
-            var PayGateKey  = _configuration["appSettings:PayGateKey"];
+            var PayGateID = _configuration["PayGate:PayGateID"];
+            var PayGateKey  = _configuration["PayGate:PayGateKey"];
 
             //string responseContent = Request.Params.ToString();
             string responseContent = Request.QueryString.ToString();
@@ -166,8 +168,8 @@ namespace PayGate_integration.Controllers
         
         private async Task VerifyTransaction(string responseContent, string Referrence)
         {
-            var PayGateID = _configuration["appSettings:PayGateID"];
-            var PayGateKey  = _configuration["appSettings:PayGateKey"];
+            var PayGateID = _configuration["PayGate:PayGateID"];
+            var PayGateKey  = _configuration["PayGate:PayGateKey"];
 
             HttpClient client = new HttpClient();
             Dictionary<string, string> response = _payment.ToDictionary(responseContent);
@@ -199,7 +201,6 @@ namespace PayGate_integration.Controllers
         [Route("complete")]
         public IActionResult Complete(int? id)
         {
-            var PayBy = _configuration["appSettings:PayBy"];
             string status = "Unknown";
             switch (id.ToString())
             {

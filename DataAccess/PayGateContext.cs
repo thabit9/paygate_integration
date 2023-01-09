@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PayGate_integration.DataAccess
 {
-    public class ApplicationContext : DbContext
+    public class PayGateContext : DbContext
     {
-        public ApplicationContext()
+        public PayGateContext()
         {            
         }
-        public ApplicationContext(DbContextOptions<ApplicationContext> options) 
+        public PayGateContext(DbContextOptions<PayGateContext> options) 
             : base(options)
         {
         } 

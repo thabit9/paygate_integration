@@ -16,7 +16,9 @@ namespace PayGate_integration.Models
         public DateTime? DATE { get; set; }
         //public string PAYGATE_ID { get; set; }
         public string PAY_REQUEST_ID { get; set; }
-        public int AMOUNT { get; set; }
+        [UIHint("Currency")]
+        [Column(TypeName = "decimal(18,4)")]
+        public decimal AMOUNT { get; set; }
         public string REFERENCE { get; set; }
         public string TRANSACTION_STATUS { get; set; }
         public ResultCodes RESULT_CODE { get; set; }

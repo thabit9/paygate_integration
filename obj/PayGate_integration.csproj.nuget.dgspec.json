@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Thabis Documents\\Projects\\NETCore5\\paygate_integration\\PayGate_integration.csproj": {}
+    "E:\\Thabis Documents\\Projects\\NETCore5\\PayGate_integration\\PayGate_integration.csproj": {}
   },
   "projects": {
-    "E:\\Thabis Documents\\Projects\\NETCore5\\paygate_integration\\PayGate_integration.csproj": {
+    "E:\\Thabis Documents\\Projects\\NETCore5\\PayGate_integration\\PayGate_integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Thabis Documents\\Projects\\NETCore5\\paygate_integration\\PayGate_integration.csproj",
+        "projectUniqueName": "E:\\Thabis Documents\\Projects\\NETCore5\\PayGate_integration\\PayGate_integration.csproj",
         "projectName": "PayGate_integration",
-        "projectPath": "E:\\Thabis Documents\\Projects\\NETCore5\\paygate_integration\\PayGate_integration.csproj",
+        "projectPath": "E:\\Thabis Documents\\Projects\\NETCore5\\PayGate_integration\\PayGate_integration.csproj",
         "packagesPath": "C:\\Users\\Thabi.ESQUIRE\\.nuget\\packages\\",
-        "outputPath": "E:\\Thabis Documents\\Projects\\NETCore5\\paygate_integration\\obj\\",
+        "outputPath": "E:\\Thabis Documents\\Projects\\NETCore5\\PayGate_integration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,6 +62,10 @@
               "version": "[5.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
               "version": "[5.0.1, )"
             },
